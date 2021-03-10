@@ -52,19 +52,19 @@ const { limit } = require('./database/menu/limit*/
 const apivhtear = 'apivhtear';
 const apibarbar = 'apibarbar';
 const tobzkey = 'apitobz';
-const BotName = 'ESTER - BOT DARK GOSTOSO'; 
+const BotName = 'ESTER - BOT MIGUEL MODZ'; 
 const instagram = 'náo vai ter não'; 
 const aktif = '08:00 - 22:00';
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
-            + 'FN:DARK GOSTOSO\n' // Nama kamu
+            + 'FN:MIGUEL MODZ\n' // Nama kamu
             + 'ORG:Lexa;\n' // Nama bot
             + 'TEL;type=CELL;type=VOICE;waid=5521982310081:+55 21982310081\n' //Nomor whatsapp kamu
             + 'END:VCARD'
 prefix = '.','!','#','_'
 blocked = []
 limitawal = '999999999'
-cr = '*DARK GOSTOSO*'
+cr = '*MIGUEL MODZ*'
 
 /*********** LOAD FILE ***********/
 const _leveling = JSON.parse(fs.readFileSync('./database/group/leveling.json'))
@@ -291,9 +291,9 @@ async function starts() {
 					premium: '[❗] ESTE PEDIDO É SO PARA *USUÁRIOS PREMIUMS*',
 					mod: '[❗] ESTE PEDIDO É ESPECÍFICO PARA USUARIO MOD ESTER BOT*',
 					benned: 'Você para a banda, por favor, contate o proprietário para abrir sua banda',
-					ownerG: '[❗] DARK? Este é um recurso especial para o DARK ❌',
-					ownerB: '[❗] DARK? Este é um recurso especial para o DARK ❌',
-					userB: `──「 LISTA 」──\nOlá Kak !\nDesculpe, irmã. Você não está registrado como amigo de DARK. Registre-se para fazer amizade com o bot DARK por meio, \n\nCommand : ${prefix}daftar nama|idade\nExemplo : ${prefix}daftar DARK|15\n\n──「 ESTER BOT 」──`,
+					ownerG: '[❗] MIGUEL MODZ? Este é um recurso especial para o MIGUEL MODZ ❌',
+					ownerB: '[❗] MIGUEL MODZ? Este é um recurso especial para o MIGUEL MODZ ❌',
+					userB: `──「 LISTA 」──\nOlá Kak !\nDesculpe, irmã. Você não está registrado como amigo de MIGUEL MODZ. Registre-se para fazer amizade com o bot MIGUEL MODZ por meio, \n\nCommand : ${prefix}daftar nama|idade\nExemplo : ${prefix}daftar MIGUEL|15\n\n──「 ESTER BOT 」──`,
 					admin: '[❗] Este comando só pode ser usado por administradores de grupo! ❌',
 					Badmin: ' [❗] Este comando só pode ser usado quando o bot se torna administrador! ❌',
 				}
@@ -573,9 +573,9 @@ if (text.includes("placa"))
 			reply("bora juntos?")
 	}
 	
-		if (messagesC.includes("Jaine")){
+		if (messagesC.includes("cadebot")){
 			client.updatePresence(from, Presence.composing)
-			reply("Ela é muito linda e incrível")
+			reply("olha eu aqui carai")
 	}
 	
 		if (messagesC.includes("bot")){
@@ -907,7 +907,7 @@ if (text.includes("placa"))
 					break  
 				case 'encbinary':
 
-				encbinary = `${body.slice(11)}`
+				encbinary = `${body.slice(9)}`
 					anu = await fetchJson(`https://api.anoncybfakeplayer.com/api/binary/?encode=${encbinary}`, {method: 'get'})
 					frhan.sendMessage(from, `${anu.result}`, text, {quoted: mek})
 					await limitAdd(sender) 
@@ -1435,7 +1435,7 @@ if (text.includes("placa"))
 		        case 'wame':
                   client.updatePresence(from, Presence.composing) 
                   options = {
-                  text: `「 *LINK WHATSAPP* 」\n\n_Solicitado por_ : *@${sender.split("@s.whatsapp.net")[0]}*\n\nSeu link WhatsApp:\n\n*https://wa.me/${sender.split("@s.whatsapp.net")[0]}*\n\n*Ou*\n\n*https://api.whatsapp.com/send?phone=${sender.split("@")[0]}*\n\n*DARK NO CONTROLE🐒🚩*`,
+                  text: `「 *LINK WHATSAPP* 」\n\n_Solicitado por_ : *@${sender.split("@s.whatsapp.net")[0]}*\n\nSeu link WhatsApp:\n\n*https://wa.me/${sender.split("@s.whatsapp.net")[0]}*\n\n*Ou*\n\n*https://api.whatsapp.com/send?phone=${sender.split("@")[0]}*\n\n*MIGUEL MODZ NO CONTROLE🐒🚩*`,
                   contextInfo: { mentionedJid: [sender] }
                   }
                   client.sendMessage(from, options, text, { quoted: mek } )
@@ -2480,7 +2480,7 @@ break
 					await limitAdd(sender) 
 					break 
 					
-// recursos anime, random @DARK domina irmão
+// recursos anime, random @MIGUEL MODZ domina irmão
 
                 case 'anjing':
                    if (!isGroup) return reply(ind.groupo())
@@ -2957,7 +2957,7 @@ break
 					client.sendMessage(from, buf, image, {quoted: mek, caption: teks})
 					break
 			    case 'owner':
-                    client.sendMessage(from, {displayname: "DARK", vcard: vcard}, MessageType.contact, { quoted: mek})
+                    client.sendMessage(from, {displayname: "MIGUEL MODZ", vcard: vcard}, MessageType.contact, { quoted: mek})
                     client.sendMessage(from, 'Ctt do meu dono ai, pfv n flode o chat',MessageType.text, { quoted: mek} )
                     break
                 case 'fitnah':	
@@ -3191,7 +3191,7 @@ break
 					}
 					break
 					case 'dado':    
-					if (!isPremium) return reply('Você não é um Membro Premium, entre em contato com o DARK ou digite *.Daftarvip* para adquirir o acesso Premium!' ,text, { quoted: mek })
+					if (!isPremium) return reply('Você não é um Membro Premium, entre em contato com o MIGUEL MODZ ou digite *.Daftarvip* para adquirir o acesso Premium!' ,text, { quoted: mek })
 					
 					kapankah = body.slice(1)
 					const elu =['1','2','3','4','5','6']
@@ -3200,7 +3200,7 @@ break
 					break
 					case 'addvip':  
 					if (!isOwner) return reply(mess.only.ownerB)
-					if (!isPremium) return reply('Você não é um Membro Premium, entre em contato com o DARK ou digite * # Daftarvip * para adquirir o acesso Premium!' ,text, { quoted: mek })
+					if (!isPremium) return reply('Você não é um Membro Premium, entre em contato com o MIGUEL MODZ ou digite * # Daftarvip * para adquirir o acesso Premium!' ,text, { quoted: mek })
 					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('A marca-alvo que você quer chutar!')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
@@ -3257,7 +3257,7 @@ break
 					break
 					case 'ichiadmin':
 					tod = await getBuffer(`https://i.ibb.co/XDwBVDJ/1f2652c622fa.jpg`)
-					client.sendMessage(from, tod, image, { quoted: mek, caption: '*╭────*「 *ADMIN BOT ESTER - DARK 🇧🇷* 」\n*│+ wa.me/5521982310081*╰──────*「 *DARK* 」*────*\n\n*_SE QUER SER ADMIN DO BOT ESTER_*\n*_Tipo /iklan_*' })
+					client.sendMessage(from, tod, image, { quoted: mek, caption: '*╭────*「 *ADMIN BOT ESTER - MIGUEL MODZ 🇧🇷* 」\n*│+ wa.me/5521982310081*╰──────*「 *MIGUEL MODZ* 」*────*\n\n*_SE QUER SER ADMIN DO BOT ESTER_*\n*_Tipo /iklan_*' })
 					break
 				case 'iklan':
 					client.sendMessage(from, iklan(prefix) , text, { quoted: mek })
@@ -3266,7 +3266,7 @@ break
                     if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 					sa = await getBuffer(`https://i.ibb.co/PcQ6tsB/79ac87b9358c.jpg`)
-					client.sendMessage(from, sa, image, { quoted: mek, caption: '*╭────*「 *PREMIUM USER🐒* 」\n*│+ wa.me/5521982310081/*╰──────*「 *DARK* 」*────*\n\n*_SE QUER SER UM USUÁRIO PREMIUM DA ESTER BOT_*\n*_Ketik #daftarvip*' })
+					client.sendMessage(from, sa, image, { quoted: mek, caption: '*╭────*「 *PREMIUM USER🐒* 」\n*│+ wa.me/5521982310081/*╰──────*「 * MIGUEL MODZ* 」*────*\n\n*_SE QUER SER UM USUÁRIO PREMIUM DA ESTER BOT_*\n*_Ketik #daftarvip*' })
 					break
 					case 'cekmod': 
  
@@ -3334,7 +3334,7 @@ break
 				case 'bot':
 			     	memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://i.imgur.com/dPUVFF6.png`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*Comandos basicos para bot:*\n\n*pkg upgrade && pkg update*\n*pkg install git*\n*git clone (link da git)*\n*cd (repositório)*\n*bash install.sh*\n*npm start*\n\n*DARK NO CONTROLE*'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*Comandos basicos para bot:*\n\n*pkg upgrade && pkg update*\n*pkg install git*\n*git clone (link da git)*\n*cd (repositório)*\n*bash install.sh*\n*npm start*\n\n*MIGUEL MODZ NO CONTROLE*'})
 					break
 				case 'belle3':
 					memein = await kagApi.memeindo()
@@ -3397,7 +3397,7 @@ break
 				case 'canal':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://imgur.com/gallery/xuTCBPO`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '️*canal do DARK:*\n\n naotenhoainda'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '️*canal do MIGUEL MODZ:*\n\n https://youtube.com/channel/UCVWcmVZR1Z9lEIcafxzoQHw'})
 					break
 				case 'nsfwloli1':
 					memein = await kagApi.memeindo()
@@ -3448,7 +3448,7 @@ break
 				case 'dono':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4V_4fdvF8rluX0T3KKGOvY0TusMwx7nVWtw&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*CRIADOR:* DARK\n* \n*WPP:* wa.me/+5521982310081\n*INSTA:* sai\n\n\nEspero que tenham gostado do bot 🐒🚩️'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*CRIADOR:* MIGUEL MODZ\n*YOUTUBE:* https://www.youtube.com/channel/UCVWcmVZR1Z9lEIcafxzoQHw\n*WPP:* wa.me/+5521982310081\n*INSTA:* sai\n\n\nEspero que tenham gostado do bot 🐒🚩️'})
 					break
 				case 'setprefix':
 					if (args.length < 1) return
